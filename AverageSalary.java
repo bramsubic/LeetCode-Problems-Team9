@@ -1,12 +1,11 @@
-class AverageSalary {
-    public double average(int[] salary) {
-        System.out.println("Hello");
-        return 0.0;
-    }
+Sort sal array in order
 
-    public static void main(String[] args) {
-        AverageSalary averageSalary = new AverageSalary();
-        int[] salary = { 4000, 3000, 5000 };
-        System.out.println(averageSalary.average(salary));
-    }
-}
+Init sum to 0
+    
+For each element in sal start from index 1 to length-2:
+        
+Add the element to sum
+    
+Calculate the average by dividing sum by length - 2
+    
+Return the calculated average
