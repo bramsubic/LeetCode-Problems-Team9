@@ -1,9 +1,24 @@
 /*
-The problem requires merging two sorted linked lists into a single sorted linked list. 
-The approach is similar to the merge step in the Merge Sort algorithm.
+Pseudocode
 
-Since both lists are already sorted, we traverse both lists simultaneously, always adding the smaller of the two current nodes to our result list.
-If one list is fully processed before the other, we simply attach the remaining part of the non-empty list to the merged list.
-Finally, we return the merged list.
+Handle Edge Cases:
+    if one list if null, return the other
+
+Initialize Pointers:
+    Create a dummy node to store the merged list.
+    Maintain a temp pointer that helps build the merged list.
+
+Merge Lists by Comparing Nodes:
+    Traverse both lists.
+    Compare the current node values of l1 and l2:
+    Append the smaller node to tempList.
+    Move the corresponding list pointer to the next node.
+    If values are equal, 
+        append both nodes and move both pointers.
+    Attach Remaining Nodes:
+    If one list is exhausted before the other, 
+        attach the remaining nodes of the non-empty list to tempList.
+    
+Return the Merged List:
 
 */
