@@ -33,3 +33,21 @@ class Solution {
         return n;
     }
 }
+
+/*
+Pseudocode 
+- get the length of the input array n
+- sort the Array using Insertion Sort
+- start from the second element in the array
+- set the current element as the key
+- compare the key with the element before it
+- if the element before key is larger, shift larger element right
+- keep shifting elements right until you find right spot for key
+- insert the key into correct position
+
+- Find the Missing Number
+- if element at index i doesn't match i, return i 
+
+- If No Missing Number is Found
+- if all elements match indices missing number is n
+*/
