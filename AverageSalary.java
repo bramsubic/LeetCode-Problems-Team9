@@ -37,3 +37,22 @@ class Solution {
         return (double) sum / (salary.length - 2); 
     }
 }
+
+/*
+Pseudocode
+- get length of salary array 
+
+- Sort the Array -> Selection Sort
+- start with first element and treat it as the current min
+- look through rest of the array to find smaller element
+- if smaller element found update min to that elements index
+- when smallest element found swap with current element
+
+Calculate the Sum no min/max Salaries
+- Set sum to 0 --> total salary
+- loop through sorted array skip first and last elements
+- add to the sum
+
+Calculate and Return Average
+- divide sum by the num of elements added to get the average
+*/
